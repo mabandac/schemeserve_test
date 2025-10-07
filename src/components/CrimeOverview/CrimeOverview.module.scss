@@ -1,0 +1,104 @@
+.overview {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 2rem 0;
+  color: #6b7280;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.statCard {
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  &.primary {
+    background-color: #eff6ff;
+  }
+
+  &.green {
+    background-color: #f0fdf4;
+  }
+
+  &.orange {
+    background-color: #fff7ed;
+  }
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+
+  &.primary {
+    color: #2563eb;
+  }
+
+  &.green {
+    color: #16a34a;
+  }
+
+  &.orange {
+    color: #ea580c;
+  }
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  &.primary {
+    color: #1e40af;
+  }
+
+  &.green {
+    color: #15803d;
+  }
+
+  &.orange {
+    color: #c2410c;
+  }
+}
+
+.chartsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .overview {
+    padding: 1rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,96 @@
+.mapContainer {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 2rem 0;
+  color: #6b7280;
+}
+
+.mapWrapper {
+  height: 24rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+// Leaflet map styles
+:global(.leaflet-container) {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+:global(.leaflet-popup-content) {
+  margin: 0.5rem;
+  line-height: 1.4;
+}
+
+:global(.leaflet-popup-content-wrapper) {
+  border-radius: 0.5rem;
+}
+
+.popupContent {
+  padding: 0.5rem;
+}
+
+.popupTitle {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.crimeList {
+  max-height: 10rem;
+  overflow-y: auto;
+}
+
+.crimeItem {
+  font-size: 0.875rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.25rem 0;
+  margin-bottom: 0.25rem;
+}
+
+.crimeCategory {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.crimeStreet {
+  color: #6b7280;
+}
+
+.crimeOutcome {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.moreCrimes {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .mapContainer {
+    padding: 1rem;
+  }
+
+  .mapWrapper {
+    height: 20rem;
+  }
+}
