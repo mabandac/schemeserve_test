@@ -6,7 +6,7 @@ This is an interactive dashboard for visualising UK Police crime data by postcod
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 20.19+
 - npm or pnpm
 
 ### Installation
