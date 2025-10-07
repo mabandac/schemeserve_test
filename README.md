@@ -15,7 +15,7 @@ This is an interactive dashboard for visualising UK Police crime data by postcod
 
 ```bash
 git clone https://github.com/mabandac/schemeserve_test.git
-cd schemaserve_test
+cd schemeserve_test
 ```
 
 2. Install dependencies:
